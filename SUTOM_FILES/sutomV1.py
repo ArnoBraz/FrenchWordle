@@ -93,7 +93,7 @@ def affichage(prop, verif):
 
 if __name__ == '__main__':
     max_tour = 6
-
+    prop = ''
     tour = 1
     réponse=majuscule(generation())
     connues = réponse[0] + ('-' * (len(réponse)-1))
