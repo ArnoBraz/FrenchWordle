@@ -13,9 +13,9 @@ app.minsize(600, 400)
 
 #fais en sorte qu'a l'appuie du bouton demarre le jeux
 def lancer_quizz():
-    subprocess.run(["python", "quizz.py"])
+    subprocess.run(["python", "Game/quizz.py"])
 def lancer_Motus():
-    subprocess.run(["python", "sutomV2_final.py"])
+    subprocess.run(["python", "Game/sutomV2_final.py"])
 
 Titre = ctk.CTkLabel(app, text="Menu des Jeux", font=("Impact", 60))
 Pres = ctk.CTkLabel(app, text="Vous pouvez selectionner l'un des jeux suivant :", font=("Impact", 30))

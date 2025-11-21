@@ -33,7 +33,7 @@ def importe_csv(nom_fichier):
 #     "document", "vendre", "ombre", "marcher", "forme", "arrêter", "gâteau", "réfléchir", 
 #     "fête", "espérer", "voix", "recevoir"]
 
-mots = importe_csv('lexique_sa.csv')
+mots = importe_csv('Game/lexique_sa.csv')
 mots = list(map(lambda x: x['0'], mots))
 
 #TODO : (+ input "entrée" pour soumettre)
