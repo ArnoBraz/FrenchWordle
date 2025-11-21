@@ -1,2 +1,3 @@
 # FrenchWordle
-Homemade French Wordle playable in the python console
+Homemade French Wordle including a UI with customtkinter  
+Come along with a quizz made by Abdenour Benbouzid
