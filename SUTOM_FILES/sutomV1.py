@@ -1,14 +1,19 @@
-from fonctions_csv import*
 import random
 
+def importe_csv(nom_fichier):
+    with open(nom_fichier, 'r', encoding="utf-8", newline='') as fichier:
+        lecteur = csv.DictReader(fichier,  delimiter=',')
+        return [dict(ligne) for ligne in lecteur]
+
 ## Parametre
-lexique = importe_csv('lexique.csv')
-lexique=set(map(lambda x: x['0'], lexique))
+mots = importe_csv('lexique_sa.csv')
+mots = list(map(lambda x: x['0'], mots))
 
 ## Génération
 
 def generation():
-    mot = random.choice(tuple(lexique))
+    global mots
+    mot = random.choice(mots)
     return mot
 
 def majuscule(mot_généré):
@@ -107,3 +112,4 @@ if __name__ == '__main__':
         print("VOus avez perdu..")
     else:
         print('GG!')
+
